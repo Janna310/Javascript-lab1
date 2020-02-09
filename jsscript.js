@@ -11,7 +11,7 @@ function longestName(names) {
 }
 
 console.log(`The entered names are: ${name1}, ${name2}, ${name3}`);
-console.log(`The longest name is: ${longestName(names)}`);*/
+console.log(`${longestName(names)} + "has the longest name"`);*/
 
 
 //console.log(longestName(names)); 
@@ -32,5 +32,4 @@ function longest_string(str_ara) {
   result = str_ara.filter(v => v.length == max);
   return result;
 }
-
-console.log(longest_string([name1, name2,name3]))
+console.log(longest_string([name1, name2,name3]) + ' has the longest name')
