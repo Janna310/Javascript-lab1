@@ -44,7 +44,7 @@ const getNames = names => {
     return names[0] +" is the longest name";
   }
 
-  if (names.length === 2) {
+  if (names.length <= 2) { {
     return names.join(' and ') + " are the longest names."
   }
 
