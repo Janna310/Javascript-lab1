@@ -32,4 +32,26 @@ function longest_string(str_ara) {
   result = str_ara.filter(v => v.length == max);
   return result;
 }
-console.log(longest_string([name1, name2,name3]) + ' has the longest name')
+console.log(longest_string([name1, name2, name3]));
+
+const getNames = names => {
+
+  if (!names.length) {
+    return 'No names!';
+  } 
+
+  if (names.length === 1) {
+    return names[0] +" is the longest name";
+  }
+
+  if (names.length === 2) {
+    return names.join(' and ') + " are the longest names."
+  }
+
+  if (names.length > 2) {
+    const last = names.pop()
+    return `${names.join(', ')} and ${last}` + " are all the longest names."
+  }
+
+}
+console.log (getNames(names))
